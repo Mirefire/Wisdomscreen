@@ -1,0 +1,42 @@
+<element name='toast' src='../../component/dialog/dialog.hml'></element>
+<div class="container">
+    <swiper class="swiper" id="swiper" index="0" indicator="true" autoplay='true' loop="true" digital="false">
+        <div class = "swiperContent" >
+           <image class="swiper-img" src="/common/images/mea.jpg" />
+        </div>
+        <div class = "swiperContent">
+            <image class="swiper-img" src="/common/images/meb.jpg" />
+        </div>
+        <div class = "swiperContent">
+            <image class="swiper-img" src="/common/images/mec.jpg" />
+        </div>
+        <div class = "swiperContent">
+            <image class="swiper-img" src="/common/images/med.jpg" />
+        </div>
+        <div class = "swiperContent">
+            <image class="swiper-img" src="/common/images/mee.jpg" />
+        </div>
+        <div class = "swiperContent">
+            <image class="swiper-img" src="/common/images/mef.jpg" />
+        </div>
+    </swiper>
+    <div class="container-buttons">
+        <div class="buttons-list">
+            <block for="{{(index,item) in btnList}}">
+                <button class="btn" focusable="{{index == choose?true:false}}" @click="openvideo(index,item.txt)" type="capsule" value="{{item.txt}}"/>
+            </block>
+        </div>
+    </div>
+    <div class="container-buttons-top">
+        <div class="buttons-list">
+            <button focusable="false" class="bt-top"  icon="/common/icon/sousuo.png" type="circle"/>
+            <button focusable="false" class="bt-top" icon="/common/icon/geren.png" type="circle"/>
+            <button focusable="false" class="bt-top" icon="/common/icon/wangluos.png" type="circle" />
+            <button focusable="false" class="bt-top" icon="/common/icon/shezhi.png" type="circle"/>
+            <button focusable="false" value="13:15" class="bt-top" type="capsule" />
+            <button focusable="false" value="HUAW" class="bt-top" type="capsule" />
+        </div>
+<!--        试看长时间视频-->
+    </div>
+    <toast content="{{content}}" showtow="{{showTow}}" @callback='getvalue'></toast>
+</div>

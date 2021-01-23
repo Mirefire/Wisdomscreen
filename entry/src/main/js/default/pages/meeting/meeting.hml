@@ -1,0 +1,24 @@
+<div class="container">
+        <div class="container-meet-left">
+            <div class="left-menu">
+                <button style="top:{{topval}}" class="left-icon" @click="showIcon"  type="circle" focusable="false" icon="{{iconpath}}"/>
+            </div>
+          <div class="container-meet-left-mian {{showico ==1 ?'iconmenuright':showico == 2?'iconmenuleft':''}}" @touchstart="touchs">
+              <div class="container-meet-left-li {{chossindex == index?'actione':''}}" for="{{(index,item) in list}}" tid="index">
+                  <text  @click="drwa(index)">
+                      <span>{{item.txt}}</span>
+                  </text>
+                  <divider/>
+              </div>
+          </div>
+        </div>
+        <div class="container-meet-right">
+           <canvas id="canvas" ref="canvas" class="container-meet-right-canvas" @touchstart="touchstart"
+                   @touchmove="touchmove" @touchcancel='touchcancel' @touchend="touchend"/>
+            <div class="canvas-control">
+                <button value='清除' @click='clear'  focusable="false"/>
+                <button value='恢复' @click='restore'  focusable="false"/>
+                <button value='保存' @click='save'  focusable="false"/>
+            </div>
+        </div>
+    </div>

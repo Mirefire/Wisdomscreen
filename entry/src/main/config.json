@@ -1,0 +1,95 @@
+{
+  "app": {
+    "bundleName": "com.example.mytv",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.mytv",
+    "name": ".MyApplication",
+    "deviceType": [
+      "tv",
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "permissions": [],
+        "name": "com.example.mytv.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "我的电视",
+        "type": "page",
+        "launchType": "singleton"
+      },
+      {
+        "name": "com.example.mytv.Feature.ComputeServiceAbility",
+        "description": "$string:ComputeService_description",
+        "icon": "$media:icon",
+        "label": "视频",
+        "launchType": "standard",
+        "visible": false,
+        "skills": [
+          {
+            "actions": [
+              "action.play.Video",
+              "action.stop.Video"
+            ],
+            "entities": [
+              "entity.Video"
+            ]
+          }
+        ],
+        "type": "service",
+        "backgroundModes": [
+          "audioPlayback"
+        ]
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/home/home",
+          "pages/index/index",
+          "pages/detail/detail",
+          "pages/gallerycenter/gallerycenter",
+          "pages/meeting/meeting"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

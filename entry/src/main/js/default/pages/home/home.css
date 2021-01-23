@@ -1,0 +1,55 @@
+@import "../../common/common.css";
+.container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.swiperContent{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.swiper-img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.container-buttons{
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+}
+.buttons-list{
+    height: 80px;
+}
+.btn{
+    height: 55px;
+    width: 120px;
+    margin:5px 10px ;
+    font-size: 22px;
+}
+.bt-top{
+/*    height: 70px;*/
+    width: 70px;
+    padding: 10px;
+    margin: 15px 5px;
+}
+.container-buttons-top{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+

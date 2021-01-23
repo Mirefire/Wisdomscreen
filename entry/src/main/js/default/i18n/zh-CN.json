@@ -1,0 +1,14 @@
+{
+  "strings": {
+    "title": "标题",
+    "subtitle": "副标题",
+    "tab": "页签",
+    "text": "文本内容"
+  },
+  "Files": {
+    "icon_focus": "/common/plus-black.png",
+    "icon_blur": "/common/plus-white.png",
+    "img_large": "/common/img-large.png",
+    "img_small": "/common/img-small.png"
+  }
+}

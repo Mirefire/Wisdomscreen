@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="tv_box">
+        <div class="title_box">
+            <text class="title">{{title}}
+            </text>
+            <button type="capsule" @click="goback" class="setting_box" value="返回" />
+        </div>
+        <tabs class="tab_box">
+            <tab-bar mode="scrollable" class="bar_box">
+                <block for="{{(index,item) in videolist}}" tid="index">
+                    <text class="tab_text">{{item.name}}
+                    </text>
+                </block>
+            </tab-bar>
+            <tab-content>
+                <block for="{{(index,item) in videolist}}">
+                    <div class="content_box">
+                        <list class="content_img">
+                            <block for="{{(i,it) in item.url}}" tid="i">
+                                <list-item type="listItem" class="list_img">
+                                    <image @click="openvideo(item.name,it.video)" focusable="true" class="tab_img" src="{{it.url}}"></image>
+                                </list-item>
+                            </block>
+                        </list>
+                        <div class="subtitle_box">
+                            <text class="subtitle">{{item.itemname}}
+                            </text>
+                        </div>
+                        <list class="img_list">
+                            <block for="{{(i,iyes) in item.items}}">
+                                <list-item type="listItem" class="list_box">
+                                    <image focusable="true" class="img_img" src="{{iyes.url}}"></image>
+                                    <text class="img_text">{{iyes.content}}
+                                    </text>
+                                </list-item>
+                            </block>
+                        </list>
+                    </div>
+                </block>
+            </tab-content>
+        </tabs>
+    </div>
+    <dialog id="simpledialog" class="dialog-main" oncancel="cancelDialog">
+        <div class="dialog-div">
+            <div class="inner-txt">
+                <text class="txt">{{content}}</text>
+            </div>
+            <div class="inner-btn">
+                <button type="capsule" value="Cancel" onclick="cancelSchedule" class="btn-txt"></button>
+                <button type="capsule" value="Confirm" onclick="setSchedule" class="btn-txt"></button>
+            </div>
+        </div>
+    </dialog>
+</div>

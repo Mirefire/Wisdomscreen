@@ -1,0 +1,124 @@
+.container {
+
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+}
+.container-meet-left{
+    width: 200px;
+    left: 10px;
+    top: 10px;
+    height: 500px;
+/*    background-color:burlywood;*/
+    bottom: 10px;
+    position: relative;
+
+
+}
+.container-meet-left-mian{
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+}
+.left-menu{
+   position: absolute;
+    left: 20px;
+}
+.left-icon{
+    width: 80px;
+    padding: 10px;
+    margin: 15px 5px;
+}
+.container-meet-left-li{
+    height: 80px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-meet-left-li text{
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    height:80px;
+}
+.actione{
+    width: 200px;
+    height:80px;
+    background-color:#4D4D4D;
+}
+.container-meet-left-li button{
+    font-size:25px;
+    height:80px;
+    width:200px;
+}
+.container-meet-right{
+    left:0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container-meet-right-canvas{
+    height: 400px;
+    width: 600px;
+    background-color: #fff;
+    margin-top:50px;
+}
+.canvas-control{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    margin-top:20px;
+}
+.canvas-control button{
+    margin-left:20px;
+    width:120px;
+    height:70px;
+    font-size:25px;
+}
+.iconmenuright{
+    animation-name:leftmenu;
+    animation-delay:0.1s;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+}
+@keyframes leftmenu{
+        from{
+            width: 0px;
+            opacity:0;
+        }
+        to{
+            width: 200px;
+            opacity:1;
+        }
+}
+.iconmenuleft{
+    animation-name:rightmenu;
+    animation-delay:0s;
+    animation-duration:1s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+}
+@keyframes rightmenu{
+    from{
+        width: 200px;
+        opacity:0.5;
+    }
+    to{
+        width: 0px;
+        opacity:0;
+    }
+}

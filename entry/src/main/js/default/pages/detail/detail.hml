@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="container-header">
+        <div class="title">
+            <text>
+                <span>{{name}}</span>
+            </text>
+        </div>
+        <button class="title-btn" focusable="false" type="capsule" @click="goback" value="返回"></button>
+    </div>
+    <div class="container-video-main">
+        <video object-fit='cover' @timeupdate="timeupdate" @seeking='seeking' ref="videof" id="video" class="container-video" src="{{videoUrl}}" autoplay="true"></video>
+    </div>
+    <div class="container-control-btn">
+        <button class="container-control-btn-sn" focusable="false" type="capsule" value="暂停" @click="stop"></button>
+        <button class="container-control-btn-sn" focusable="false" type="capsule" value="开始" @click="start"></button>
+        <button class="container-control-btn-sn" focusable="false" type="capsule" value="播放位置" @click="setCur"></button>
+    </div>
+</div>

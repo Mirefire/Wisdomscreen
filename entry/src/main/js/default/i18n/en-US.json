@@ -1,0 +1,14 @@
+{
+  "strings": {
+    "title": "Title",
+    "subtitle": "Subtitle",
+    "tab": "Tab",
+    "text": "Context"
+  },
+  "Files": {
+    "icon_focus": "/common/plus-black.png",
+    "icon_blur": "/common/plus-white.png",
+    "img_large": "/common/img-large.png",
+    "img_small": "/common/img-small.png"
+  }
+}

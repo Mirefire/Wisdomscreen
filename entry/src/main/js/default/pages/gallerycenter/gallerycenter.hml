@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="container-search">
+        <input type="text" focusable="false" class="container-search-input {{animationName}}" placeholder="搜索图片" value="" />
+        <button type="capsule" @click="searchTap" class="container-search-btn" focusable="false" value="搜索"/>
+        <button type="capsule" class="goback" value="返回" focusable="false" @click="goback"/>
+    </div>
+    <div class="container-main-images">
+        <list class="container-list">
+            <list-item class="container-list-grounp">
+                <div class="container-image">
+                    <image src="/common/images/mea.jpg"/>
+                </div>
+            </list-item>
+            <list-item class="container-list-grounp">
+                <div class="container-image">
+                    <image src="/common/images/meb.jpg"/>
+                </div>
+            </list-item>
+            <list-item class="container-list-grounp">
+                <div class="container-image">
+                    <image src="/common/images/mec.jpg"/>
+                </div>
+            </list-item>
+        </list>
+
+    </div>
+</div>

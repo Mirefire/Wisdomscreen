@@ -1,0 +1,150 @@
+@import '../../common/common.css';
+.container {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #547CFF;
+}
+
+.tv_box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+/*    margin-bottom: 20px;*/
+}
+
+.title_box {
+/*    background-color: coral;*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: 10px 0;
+}
+
+.title {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 48px;
+}
+
+.setting_box {
+    width: 70px;
+    height: 50px;
+    margin-right: 48px;
+}
+
+.tab_box {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: flex-start;
+/*    height: 456px;*/
+}
+
+.bar_box {
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-width: 1px;
+    border-color: #000;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+.tab_text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    width: 120px;
+    text-align: center;
+}
+
+.tab_text:focus {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+}
+
+.tab_text:active {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+}
+
+.content_box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 384px;
+    margin-left: 36px;
+}
+
+.content_img {
+    flex-direction: row;
+    height: 177px;
+    border-radius: 8px;
+}
+
+.list_img {
+    width: 272px;
+    height: 153px;
+    border-radius: 8px;
+    margin: 12px;
+    border-radius: 8px;
+}
+
+.tab_img {
+    width: 272px;
+    height: 153px;
+    border-radius: 8px;
+}
+
+.subtitle_box {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 48px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 12px;
+    margin-bottom: 6px;
+}
+
+.img_list {
+    flex-direction: row;
+    height: 159px;
+}
+
+.list_box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 198px;
+    height: 130px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 8px;
+}
+
+.img_img {
+    width: 198px;
+    height: 111.5px;
+    border-radius: 8px;
+}
+
+.img_text {
+    margin-top: 6px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}

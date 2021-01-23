@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "我的电视"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_TV_Tab Feature Ability"
+    },
+    {
+      "name": "ComputeService_description",
+      "value": "Video play Ability"
+    }
+  ]
+}
